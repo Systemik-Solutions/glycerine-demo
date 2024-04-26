@@ -20,7 +20,7 @@ function loadEmbed() {
         const route = router.resolve({
             name: 'viewer',
             query: {
-                manifest: manifest.value,
+                'iiif-content': manifest.value,
             },
         });
         embedSource.value = new URL(route.href, window.location.origin).href;
@@ -33,7 +33,7 @@ function openViewer() {
         router.push({
             name: 'viewer',
             query: {
-                manifest: manifest.value,
+                'iiif-content': manifest.value,
             },
         });
     }
