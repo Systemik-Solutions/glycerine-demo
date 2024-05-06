@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "glycerine-viewer": "^0.0.2",
+    "glycerine-viewer": "^0.0.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "vue3-highlightjs": "^1.0.5"
