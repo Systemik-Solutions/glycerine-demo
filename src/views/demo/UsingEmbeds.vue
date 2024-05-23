@@ -62,7 +62,7 @@ loadEmbed();
     <p>
         The following example uses a page created within this demo application (via Vue Router) to demonstrate the
         embedding method. The page <code>/viewer</code> accepts the URL of the IIIF manifest as the value of query
-        parameter <code>manifest</code> and renders the Glycerine Viewer based on the manifest. Check the source file
+        parameter <code>iiif-content</code> and renders the Glycerine Viewer based on the manifest. Check the source file
         <code>/src/views/demo/FullscreenViewer.vue</code> to find out more details about the implementation of the
         viewer page.
     </p>
@@ -88,7 +88,7 @@ loadEmbed();
             </div>
         </template>
     </Card>
-    <iframe frameborder="0" style="width:100%;height:600px;" :src="embedSource"></iframe>
+    <iframe frameborder="0" allowfullscreen allow="fullscreen" style="width:100%;height:600px;" :src="embedSource"></iframe>
 </template>
 
 <style scoped>
