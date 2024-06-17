@@ -70,10 +70,6 @@ loadEmbed();
         You can use the following form to paste in the URL of a IIIF manifest and view it as an embed or open it in the
         viewer page.
     </p>
-    <Message :closable="false">
-        Glycerine Viewer currently only supports <a href="https://iiif.io/api/presentation/3.0/">IIIF Presentation API
-        3.0</a> manifests
-    </Message>
     <Card class="mb-4 bg-cyan-50">
         <template #content>
             <div class="field grid">
