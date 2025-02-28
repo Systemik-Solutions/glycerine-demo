@@ -27,7 +27,7 @@ import 'primevue/resources/themes/lara-light-blue/theme.css';
 import 'glycerine-viewer/style.css';
 
 // Import the Glycerine Viewer component.
-import { GlycerineViewer } from 'glycerine-viewer';
+import { GlycerineViewer, i18n } from 'glycerine-viewer';
 
 const app = createApp(App)
 
@@ -38,6 +38,9 @@ app.use(VueHighlightJS);
 
 // Use the PrimeVue library.
 app.use(PrimeVue);
+
+// Use the i18n plugin.
+app.use(i18n);
 
 // Register the Glycerine Viewer component globally.
 app.component('GlycerineViewer', GlycerineViewer);
