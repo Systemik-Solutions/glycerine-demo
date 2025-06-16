@@ -27,11 +27,11 @@ const items = ref([
     <Menu :model="items">
         <template #item="{ item, props }">
             <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
-                <a :href="href" v-bind="props.action" @click="navigate">
+                <a :href="href" class="p-menuitem-link" @click="navigate">
                     {{ item.label }}
                 </a>
             </router-link>
-            <a v-else :href="item.url" :target="item.target" v-bind="props.action">
+            <a v-else :href="item.url" :target="item.target">
                 {{ item.label }}
             </a>
         </template>

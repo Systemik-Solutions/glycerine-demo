@@ -8,6 +8,9 @@ import router from './router'
 import VueHighlightJS from 'vue3-highlightjs'
 import 'highlight.js/styles/atom-one-dark.css'
 
+// Import the PrimeVue base styles.
+import 'primevue/resources/primevue.min.css';
+
 // Import the PrimeFlex CSS.
 import 'primeflex/primeflex.css';
 
